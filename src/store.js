@@ -5,7 +5,7 @@ import { reactReduxFirebase, firebaseReducer } from "react-redux-firebase";
 import { reduxFirestore, firestoreReducer } from "redux-firestore";
 
 const firebaseConfig = {
-  //Add your config data
+  //Add your firestore config Info.
 };
 
 const rrfConfig = {
@@ -18,6 +18,8 @@ const rrfConfig = {
 firebase.initializeApp(firebaseConfig);
 //Init firestore
 const firestore = firebase.firestore();
+const settings = { timestampsInSnapshots: true };
+firestore.settings(settings);
 
 const createStoreWithFirebase = compose(
   reactReduxFirebase(firebase, rrfConfig),
