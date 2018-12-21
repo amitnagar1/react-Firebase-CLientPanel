@@ -3,24 +3,20 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AppNavbar from "./components/layout/AppNavbar";
 import Dashboard from "./components/layout/Dashboard";
 import "./App.css";
-import { Provider } from "react-redux";
-import store from "./store";
 
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <Router>
-          <div className="App">
-            <AppNavbar />
-            <div className="container">
-              <Switch>
-                <Route exact="/" component={Dashboard} />
-              </Switch>
-            </div>
+      <Router>
+        <div className="App">
+          <AppNavbar />
+          <div className="container">
+            <Switch>
+              <Route exact="/" component={Dashboard} />
+            </Switch>
           </div>
-        </Router>
-      </Provider>
+        </div>
+      </Router>
     );
   }
 }
