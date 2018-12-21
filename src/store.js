@@ -5,12 +5,7 @@ import { reactReduxFirebase, firebaseReducer } from "react-redux-firebase";
 import { reduxFirestore, firestoreReducer } from "redux-firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAhFWyxZlXP-alMBLc6Yz83lMk_E-RVXIw",
-  authDomain: "reactclientpanel-db2ef.firebaseapp.com",
-  databaseURL: "https://reactclientpanel-db2ef.firebaseio.com",
-  projectId: "reactclientpanel-db2ef",
-  storageBucket: "reactclientpanel-db2ef.appspot.com",
-  messagingSenderId: "1039990760858"
+ 
 };
 
 const rrfConfig = {
