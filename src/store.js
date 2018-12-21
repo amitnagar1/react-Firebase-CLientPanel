@@ -4,7 +4,9 @@ import "firebase/firestore";
 import { reactReduxFirebase, firebaseReducer } from "react-redux-firebase";
 import { reduxFirestore, firestoreReducer } from "redux-firestore";
 
-const firebaseConfig = {};
+const firebaseConfig = {
+  //Add your config data
+};
 
 const rrfConfig = {
   userProfile: "users",
