@@ -6,6 +6,7 @@ import { reduxFirestore, firestoreReducer } from "redux-firestore";
 
 const firebaseConfig = {
   //Add Firestore config Info
+ 
 };
 
 const rrfConfig = {
